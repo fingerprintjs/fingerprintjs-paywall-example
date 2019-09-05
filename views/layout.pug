@@ -1,0 +1,39 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  title Tennis Chronicles
+  link(href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet')
+  link(href='/css/main.css' rel='stylesheet')
+body
+  header
+    .navbar.navbar-dark.bg-dark
+      .container
+        a.navbar-brand(href='/')
+          img.img-fluid(src="/img/logo.png")
+  main
+    block content
+  footer.text-center.py2
+    .container
+      .row
+        .col
+          | &copy; Tennis Chronicles, 2019
+          p
+            b Disclaimer:&nbsp;
+            | Not a real newspaper. Created to demonstrate the paywall technology, provided by 
+            a(href="https://fpjs.io" target="_blank") fpjs.io
+      .row.mb-2
+        .col.text-center
+          a(href="https://github.com/fpjspro/paywall.fpjs.dev" target="_blank")
+            img(src="/img/github.svg" height="30px")
+
+  include modal
+  script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+  script(src="/js/main.js")
+  script.
+    window.fpLayer = window.fpLayer || [];
+    function fp() { fpLayer.push(arguments); }
+    fp('config', 'client', 'paywall');
+    fp('config', 'loaded', fpLoaded);
+  script(src="https://cdn.fpjs.io/@2/fp.js")

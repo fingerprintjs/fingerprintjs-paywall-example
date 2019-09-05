@@ -1,0 +1,55 @@
+#paywall-modal.modal.fade
+  .modal-dialog.modal-dialog-centered.modal-lg
+    .modal-content
+      .modal-body
+        #paywall-1
+          img.img-fluid(src="/img/paywall-placing.jpg")
+          .container
+            .row
+              .col.text-center.mt-2
+                h2
+                  | Subscribe now
+                h4
+                  | To view unlimited articles on all your devices
+            .row
+              .col.text-center
+                img(src="/img/paypal.svg")
+                | &nbsp;
+                img(src="/img/applepay.svg")
+                | &nbsp;
+                img(src="/img/visa.svg")
+                | &nbsp;
+                img(src="/img/master-card.svg")
+                | &nbsp;
+            .row
+              .col.text-center
+                a#subscribe-btn.btn.btn-danger.my-4(style="color:white")
+                  strong
+                    | Subscribe now for only 99&cent;/week
+                .border-top
+                  small
+                    i
+                      | Cancel with 1 click anytime, 100% satisfaction guaranteed, available on iPhone and Android.
+        #paywall-2.text-center.hide
+          h2 YOU JUST CLICKED
+            | &nbsp;
+            span.badge.badge-danger.align-top
+              | SUBSCRIBE
+          .alert.alert-success.my-4
+            h3 It means that the paywall worked.
+          .mb-4
+            h4
+              | Get your own next gen paywall solution with
+              a(href="https://fpjs.io" target="_blank") 
+                | FPJS.io 
+              | now
+            small
+              | Works in all browsers, even in incognito mode.
+          form#contact-form(method="post" action="/")
+            .row
+              .col
+                input#contact-email.btn-block(type="email" class="form-control" required placeholder="name@example.com")
+              .col
+                button#contact-submit.btn.btn-primary.btn-block(type="submit") Contact me
+          div.mt-5
+            a(href="/") Return to home page

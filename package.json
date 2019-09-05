@@ -1,0 +1,22 @@
+{
+  "name": "paywall",
+  "version": "1.0.0",
+  "description": "A demo paywall app built with FPJS PRO, Express and Typescript",
+  "main": "index.js",
+  "repository": "https://github.com/fpjspro/paywall",
+  "author": "Valentin Vasilyev",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^7.12.1",
+    "pug": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "start:dev": "nodemon"
+  }
+}
