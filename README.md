@@ -5,7 +5,7 @@ Useful for newspapers and all content publishers.
 
 Technology stack:
 
-https://fpjs.io (FPJS PRO - modern user identification).
-nodejs
-expressjs
-PG
+* https://fpjs.io (FPJS PRO - modern user identification).
+* nodejs
+* expressjs
+* PG
