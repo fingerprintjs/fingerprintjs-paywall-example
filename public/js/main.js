@@ -33,7 +33,7 @@ $("#contact-form").on("submit", function (e) {
   }
   var payload = { email: email, name: email, website: email, comment: 'paywall.fpjs.dev' };
   $.ajax({
-    url: "https://admin.fpjs.io/leads",
+    url: "https://admin.fingerprintjs.com/leads",
     type: 'post',
     dataType: 'json',
     contentType: 'application/json',
@@ -43,7 +43,7 @@ $("#contact-form").on("submit", function (e) {
       setTimeout(() => { alert('Thanks, we received your data') }, 300);
     },
   }).catch(function () {
-    alert("Error occurred, contact us at: support@fpjs.io");
+    alert("Error occurred, contact us at: support@fingerprintjs.com");
   }).always(function () {
     $submit.prop("disabled", false);
   });

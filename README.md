@@ -5,7 +5,7 @@ Useful for newspapers and all content publishers.
 
 Technology stack:
 
-* https://fpjs.io (FingerprintJS PRO - modern user identification).
+* https://fingerprintjs.com (FingerprintJS PRO - modern user identification).
 * nodejs
 * expressjs
 * PG
