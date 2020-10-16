@@ -3,7 +3,7 @@ var fpLoaded = function (fp) {
   if(!match){
     return
   }
-  fp.send().then(function (res) {
+  fp.get().then(function (res) {
     var query = {
       visitorId: res.visitorId,
       articleId: match[1]
