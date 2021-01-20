@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A demo paywall app built with FingerprintJS PRO, Express and Typescript",
   "main": "index.js",
-  "repository": "https://github.com/fpjspro/paywall",
+  "repository": "https://github.com/fingerprintjs/paywall-demo",
   "author": "Valentin Vasilyev",
   "license": "MIT",
   "private": false,
