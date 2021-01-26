@@ -1,0 +1,40 @@
+#paywall-modal.modal.fade
+  .modal-dialog.modal-dialog-centered.modal-lg
+    .modal-content
+      .modal-body.miriam
+        #paywall-1.text-center
+          .container            
+            .alert.alert-success.my-4
+               h3 
+                | You have reached your limit of 2 articles this week.
+                br
+                | The paywall is working!
+               small
+                 | Try to get around this paywall by opening this article in incognito mode (copy and paste the URL).
+            .row
+              .col.mt-2
+                h5(style="line-height: 1.6")
+                  | Set up your own next gen paywall solution with 
+                  a(href="https://fingerprintjs.com" target="_blank")
+                    | FingerprintJS Pro
+                  |, the most accurate user identification API available.
+            .row.my-4
+              .col-sm(style="text-align:left")
+                h6.pl-5.pb-2
+                  img(src="/img/browser_fingerprinting.png")
+                  |  Browser Fingerprinting
+                h6.pl-5
+                  img(src="/img/anonymous_user_identification.png")
+                  |  Anonymous User Identification               
+              .col-sm(style="text-align:left")
+                h6.pl-5.pb-2
+                  img(src="/img/incognito_detection.png")
+                  |  Incognito Mode Detection
+                h6.pl-5
+                  img(src="/img/api_webhooks.png")
+                  |  API & Webhooks
+            .row
+                .col.mt-2
+                  a#start-trial-btn.btn.btn-danger.btn-lg.my-1(style="background-color:#f04405" href="https://dashboard.fingerprintjs.com/?utm_source=paywall" target="_blank")
+                    strong
+                      | Start Free Trial
