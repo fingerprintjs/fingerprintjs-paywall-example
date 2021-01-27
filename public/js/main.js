@@ -10,7 +10,7 @@ var fpLoaded = function (fp) {
     };
     $.getJSON("/paywall", query, function (res) {
       if(res.enabled){
-        window.location.replace('https://dashboard.fingerprintjs.com/?utm_source=paywall');
+        $("#paywall-modal").modal({ keyboard: false, show: true, backdrop: "static" });
       }
     });
   });
