@@ -43,5 +43,5 @@ body
   script(
     async
     src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs-pro@3/dist/fp.min.js"
-    onload="FingerprintJS.load({ token: 'paywall' }).then(fpLoaded)"
+    onload="FingerprintJS.load({ token: 'paywall', endpoint: 'https://f.fingerprintjs.com/' }).then(fpLoaded)"
   )
