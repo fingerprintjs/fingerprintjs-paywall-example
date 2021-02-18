@@ -8,10 +8,10 @@ head
   link(href='/css/main.css' rel='stylesheet')
   script(async src="https://www.googletagmanager.com/gtag/js?id=UA-144459549-2")
   script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-144459549-2');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-144459549-2');
 body
   header
     .navbar.navbar-dark.bg-dark
@@ -28,14 +28,14 @@ body
           p
             b Disclaimer:&nbsp;
             | Not a real newspaper. Created to demonstrate the 
-            a(href="https://fingerprintjs.com" target="_blank") FingerprintJS Paywall Pro technology
+            a(href="https://fingerprintjs.com" target="_blank") FingerprintJS Pro Paywall technology
             | , provided by 
             a(href="https://fingerprintjs.com" target="_blank") fingerprintjs.com
       .row.mb-2
         .col.text-center
           a(href="https://github.com/fingerprintjs/paywall-demo" target="_blank")
             img(src="/img/github.svg" height="30px")
-            
+
   include modal
   script(src="https://code.jquery.com/jquery-3.3.1.min.js")
   script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
@@ -43,5 +43,5 @@ body
   script(
     async
     src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs-pro@3/dist/fp.min.js"
-    onload="FingerprintJS.load({ token: 'paywall', endpoint: 'https://f.fingerprintjs.com/' }).then(fpLoaded)"
+    onload="FingerprintJS.load({ token: 'paywall', endpoint: 'https://f.fingerprintjs.com/' }).then(fpLoaded)" 
   )
