@@ -40,6 +40,9 @@ body
   include modal
   script(src="https://code.jquery.com/jquery-3.3.1.min.js")
   script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+  script.
+    var fpjsRollbarClientId = !{JSON.stringify(fpjsRollbarClientId)};
+    var fpjsRollbarToken = !{JSON.stringify(fpjsRollbarToken)};
   script(src="/js/main.js")
   script(
     async

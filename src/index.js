@@ -9,6 +9,9 @@ app.set("views", "./views");
 app.set("view engine", "pug");
 app.use(express.static("public"))
 
+app.locals.fpjsRollbarClientId = process.env["PAYWALL_FPJS_ROLLBAR_CLIENT_ID"] || '';
+app.locals.fpjsRollbarToken = process.env["PAYWALL_FPJS_ROLLBAR_TOKEN"] || '';
+
 
 app.get("/", (req, res) => {
   res.render("home");

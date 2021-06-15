@@ -6,6 +6,10 @@ function fpAgentLoaded() {
   FingerprintJS.load({
     token: 'paywall',
     endpoint: 'https://f.fingerprintjs.com/',
+    debug: FingerprintJS.makeRemoteDebugger({
+      clientId: fpjsRollbarClientId,
+      token: fpjsRollbarToken
+    })
   })
     .then(function (fp) {
       return fp.get()
