@@ -40,9 +40,12 @@ body
   include modal
   script(src="https://code.jquery.com/jquery-3.3.1.min.js")
   script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+  script.
+    var fpjsRollbarClientId = !{JSON.stringify(fpjsRollbarClientId)};
+    var fpjsRollbarToken = !{JSON.stringify(fpjsRollbarToken)};
   script(src="/js/main.js")
   script(
     async
-    src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs-pro@3/dist/fp.min.js"
-    onload="FingerprintJS.load({ token: 'paywall', endpoint: 'https://f.fingerprintjs.com/' }).then(fpLoaded)" 
+    src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs-pro@dev/dist/fp.min.js"
+    onload="fpAgentLoaded()"
   )
