@@ -4,7 +4,7 @@ function fpAgentLoaded() {
     return
   }
   FingerprintJS.load({
-    token: 'paywall',
+    token: fpjsToken,
     endpoint: 'https://f.fingerprintjs.com/',
     debug: FingerprintJS.makeRemoteDebugger({
       clientId: fpjsRollbarClientId,
