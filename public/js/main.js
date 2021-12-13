@@ -5,7 +5,7 @@ function fpAgentLoaded() {
   }
   FingerprintJS.load({
     token: fpjsToken,
-    endpoint: 'https://f.fingerprintjs.com/',
+    endpoint: 'https://g.fingerprintjs.com/',
     tlsEndpoint:'https://demo.fpaux.net/',
     debug: FingerprintJS.makeRemoteDebugger({
       clientId: fpjsRollbarClientId,
