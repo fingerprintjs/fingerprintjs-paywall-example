@@ -3,15 +3,7 @@ function fpAgentLoaded() {
   if(!match){
     return
   }
-  FingerprintJS.load({
-    token: fpjsToken,
-    endpoint: 'https://g.fingerprintjs.com/',
-    tlsEndpoint:'https://demo.fpaux.net/',
-    debug: FingerprintJS.makeRemoteDebugger({
-      clientId: fpjsRollbarClientId,
-      token: fpjsRollbarToken
-    })
-  })
+  FingerprintJS.load()
     .then(function (fp) {
       return fp.get()
     })
