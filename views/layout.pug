@@ -43,6 +43,6 @@ body
   script(src="/js/main.js")
   script(
     async
-    src=`https://c.fingerprintjs.com/v3/${encodeURIComponent(fpjsToken)}/iife.min.js`
+    src=`${fpjsCdnUrl}v3/${encodeURIComponent(fpjsToken)}/iife.min.js`
     onload="fpAgentLoaded()"
   )
