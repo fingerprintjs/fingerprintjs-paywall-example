@@ -9,8 +9,7 @@ app.set("views", "./views");
 app.set("view engine", "pug");
 app.use(express.static("public"))
 
-app.locals.fpjsRollbarClientId = process.env["PAYWALL_FPJS_ROLLBAR_CLIENT_ID"] || '';
-app.locals.fpjsRollbarToken = process.env["PAYWALL_FPJS_ROLLBAR_TOKEN"] || '';
+app.locals.fpjsCdnUrl = process.env["PAYWALL_FPJS_CDN_URL"] || 'https://fpcdn.io/';
 app.locals.fpjsToken = process.env["PAYWALL_FPJS_TOKEN"] || "";
 
 app.get("/", (req, res) => {

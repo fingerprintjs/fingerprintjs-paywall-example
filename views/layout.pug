@@ -40,13 +40,9 @@ body
   include modal
   script(src="https://code.jquery.com/jquery-3.3.1.min.js")
   script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
-  script.
-    var fpjsToken = !{JSON.stringify(fpjsToken)};
-    var fpjsRollbarClientId = !{JSON.stringify(fpjsRollbarClientId)};
-    var fpjsRollbarToken = !{JSON.stringify(fpjsRollbarToken)};
   script(src="/js/main.js")
   script(
     async
-    src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs-pro@3/dist/fp.min.js"
+    src=`${fpjsCdnUrl}v3/${encodeURIComponent(fpjsToken)}/iife.min.js`
     onload="fpAgentLoaded()"
   )
