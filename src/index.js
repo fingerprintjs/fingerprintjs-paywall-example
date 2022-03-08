@@ -10,7 +10,7 @@ app.set("view engine", "pug");
 app.use(express.static("public"))
 
 app.locals.fpjsCdnUrl = process.env["PAYWALL_FPJS_CDN_URL"] || 'https://fpcdn.io/';
-app.locals.fpjsToken = process.env["PAYWALL_FPJS_TOKEN"] || "";
+app.locals.fpjsPublicApiKey = process.env["PAYWALL_FPJS_PUBLIC_API_KEY"] || "";
 
 app.get("/", (req, res) => {
   res.render("home");
