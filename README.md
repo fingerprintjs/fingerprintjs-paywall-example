@@ -1,11 +1,12 @@
 # paywall demo
-Metered paywall demo, built with FingerprintJS PRO + Node + Express + PG.
+
+Metered paywall demo, built with Fingerprint PRO + Node + Express + PG.
 
 Useful for newspapers and all content publishers.
 
 Technology stack:
 
-* https://fingerprintjs.com (FingerprintJS PRO - modern user identification).
-* nodejs
-* expressjs
-* PG
+- https://fingerprint.com (Fingerprint PRO - modern user identification).
+- nodejs
+- expressjs
+- PG

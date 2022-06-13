@@ -1,7 +1,7 @@
 {
   "name": "paywall",
   "version": "1.0.0",
-  "description": "A demo paywall app built with FingerprintJS PRO, Express and Typescript",
+  "description": "A demo paywall app built with Fingerprint PRO, Express and Typescript",
   "main": "index.js",
   "repository": "https://github.com/fingerprintjs/paywall-demo",
   "author": "Valentin Vasilyev",
