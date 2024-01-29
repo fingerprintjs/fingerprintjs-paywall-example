@@ -1,12 +1,15 @@
-# paywall demo
+# paywall demo (Archived)
 
-Metered paywall demo, built with Fingerprint PRO + Node + Express + PG.
+This is the archived version of our metered paywall demo, which was built using Fingerprint PRO, Node, Express, and PG. It was designed for newspapers and content publishers as a demonstration of how to implement a metered paywall.
 
-Useful for newspapers and all content publishers.
+**New Demo Link:**  
+For the latest version of our paywall demo, please visit [Fingerprint Paywall Demo](https://demo.fingerprint.com/paywall).
 
-Technology stack:
+**Use Case Repository:**  
+The use case for this demo, along with other examples, can now be found in our [Fingerprint Pro Use Cases repository](https://github.com/fingerprintjs/fingerprintjs-pro-use-cases).
 
-- https://fingerprint.com (Fingerprint PRO - modern user identification).
-- nodejs
-- expressjs
-- PG
+**Original Technology Stack:**
+- Fingerprint PRO (modern user identification) - [Fingerprint.com](https://fingerprint.com)
+- Node.js
+- Express.js
+- PG (PostgreSQL)
